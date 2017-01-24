@@ -1,7 +1,6 @@
 # foundation registry
 
-[![Build status](http://git.basiccloud.net/foundation/foundation-registry/badges/master/build.svg)](http://git.basiccloud.net/foundation/foundation-dependency/commits/master)
-
+![build](https://travis-ci.org/basiccloud/foundation-registry.svg?branch=master)
 ## English
 
 Foundation registry project is committed to providing a complete set of service registration API and multiple implementations.
