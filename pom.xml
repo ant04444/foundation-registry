@@ -17,6 +17,15 @@
     <modules>
         <module>api</module>
     </modules>
+
+    <repositories>
+        <repository>
+            <id>basicCloud</id>
+            <name>basic cloud repository</name>
+            <url>http://maven.basiccloud.net/artifactory/list/basic-cloud/</url>
+        </repository>
+    </repositories>
+
     <build>
         <plugins>
             <plugin>

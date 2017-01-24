@@ -1,6 +1,6 @@
 .*
+!*.yml
 !.gitignore
-!.gitlab-ci.yml
 target
 *.iml
 *.log
