@@ -2,7 +2,6 @@ package net.basiccloud.registry;
 
 import com.google.common.base.*;
 import com.google.common.base.Objects;
-import com.google.common.collect.Collections2;
 
 import java.util.*;
 
@@ -14,9 +13,9 @@ import static com.google.common.base.Preconditions.*;
 public class ServiceInstanceData {
 
     /**
-     * constant of dolphin setService type, "DOLPHIN"
+     * constant of light setService type, "LIGHT"
      */
-    public static final String DOLPHIN_SERVICE_TYPE = "DOLPHIN";
+    public static final String LIGHT_SERVICE_TYPE = "LIGHT";
 
     /**
      * constant of rest setService type, "REST"
@@ -44,7 +43,7 @@ public class ServiceInstanceData {
     public static final String PROTOCOL_HTTPS = "https";
 
     public static class Builder {
-        private String serviceType = DOLPHIN_SERVICE_TYPE;
+        private String serviceType = LIGHT_SERVICE_TYPE;
         private Version serviceVersion;
         private Version frameworkVersion;
         private WorkMode workMode = WorkMode.NORMAL;
@@ -238,8 +237,8 @@ public class ServiceInstanceData {
         return serviceType;
     }
 
-    public boolean isDolphinService() {
-        return DOLPHIN_SERVICE_TYPE.equals(this.serviceType);
+    public boolean isLightService() {
+        return LIGHT_SERVICE_TYPE.equals(this.serviceType);
     }
 
     public boolean isRestService() {

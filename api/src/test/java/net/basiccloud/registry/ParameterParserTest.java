@@ -26,7 +26,7 @@ public class ParameterParserTest {
     @Test
     public void parseRegistryUrl_postfix() throws Exception {
         Map<String, String> parameters = new HashMap<>();
-        parameters.put("dolphin.server.registryUrl", registryUrl);
+        parameters.put("light.server.registryUrl", registryUrl);
         parameters.put("a", "aaa");
         parameters.put("b", "bbb");
         Optional<String> registryUrlOptional = ParameterParser.parseRegistryUrl(parameters);
@@ -38,7 +38,7 @@ public class ParameterParserTest {
     @Test
     public void parseRegistryUrl_emptyValue() throws Exception {
         Map<String, String> parameters = new HashMap<>();
-        parameters.put("dolphin.server.registryUrl", "");
+        parameters.put("light.server.registryUrl", "");
         parameters.put("a", "aaa");
         parameters.put("b", "bbb");
         Optional<String> registryUrlOptional = ParameterParser.parseRegistryUrl(parameters);
